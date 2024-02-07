@@ -1,0 +1,9 @@
+# build front-end
+FROM node:lts-alpine-pnpm AS frontend
+
+# RUN npm install pnpm -g
+
+WORKDIR /app
+
+COPY . /app
+
