@@ -30,10 +30,11 @@ const userInfo = computed(() => userStore.userInfo)
         {{ userInfo.name ?? 'ChenZhaoYu' }}
       </h2>
       <p class="overflow-hidden text-xs text-gray-500 text-ellipsis whitespace-nowrap">
-        <span
+        <!-- <span
           v-if="isString(userInfo.description) && userInfo.description !== ''"
           v-html="userInfo.description"
-        />
+        /> -->
+        <span>联系人：蔡溢达</span>
       </p>
     </div>
   </div>
